@@ -3,10 +3,9 @@ import logging
 import json
 # импортируем функции из нашего второго файла geo
 from geo import get_country, get_distance, get_coordinates
-from flask_ngrok import run_with_ngrok
+
 
 app = Flask(__name__)
-run_with_ngrok(app)
 # Добавляем логирование в файл.
 # Чтобы найти файл, перейдите на pythonwhere в раздел files,
 # он лежит в корневой папке
